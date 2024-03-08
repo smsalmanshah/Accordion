@@ -1,0 +1,109 @@
+/* 
+## Colors
+
+- White: hsl(0, 0%, 100%)
+- Light pink: hsl(275, 100%, 97%)
+- Grayish purple: hsl(292, 16%, 49%)
+- Dark purple: hsl(292, 42%, 14%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraphs): 16px
+
+### Font
+
+- Family: [Work Sans](https://fonts.google.com/specimen/Work+Sans)
+- Weights: 400, 600, 700 */
+
+
+
+:root{
+--bg: hsl(275, 100%, 97%);
+--primary-color: hsl(292, 42%, 14%);
+--secondary-color: hsl(292, 16%, 49%);
+}
+
+
+body{
+    background-color: var(--bg);
+    background-image: url("assets/images/background-pattern-mobile.svg");
+    background-position: top;
+    background-repeat: repeat-x;
+
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin:0;
+    
+}
+
+
+
+
+h2{
+    font-family: 'Work Sans';
+    font-size:28px;
+    color:var(--primary-color);
+    font-weight:700;
+    padding:16px;
+}
+p{
+   
+    color:var(--secondary-color);
+    font-family: 'Work Sans';
+    font-size:12px;
+}
+
+.question{
+    color:var(--primary-color);
+    font-size:14px;
+    font-weight:600;
+}
+
+.question:hover{
+    cursor:pointer;   
+}
+
+.FAQcard {
+    background-color: white;
+    max-width:80%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    border-radius: 10px;
+    padding:16px;
+}
+
+.FAQcard img{
+    height:28px;
+    width: auto;
+    padding:0 16px;
+}
+
+.faq{
+    width:100%;
+    border-bottom: solid 1px #d6d6d6;
+}
+
+.question{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.collapse{
+    display:none;
+}
+
+
+@media screen and (min-width:768px) {
+
+    .FAQcard{
+        max-width:60%;
+    }
+    
+}
